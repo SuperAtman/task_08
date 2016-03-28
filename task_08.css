@@ -1,0 +1,48 @@
+body
+.row{
+margin:0 auto ;
+}
+ [class*='col-'] {
+        float: left; 
+        height: 50px;  
+        background-color: #eee;
+        margin:20px 0 0 20px; 
+        outline: 2px solid #999;
+    }
+
+/*屏幕宽度大于 768px 的场景*/
+@media (min-width:769px) {
+	.col-md-1{
+		width: calc( 8.33333333% - 20px );
+	}
+	.col-md-2{
+		width: calc( 16.66666667% - 20px );
+	}
+	.col-md-3{
+		width: calc( 25% - 20px );
+	}
+	.col-md-4{
+		width: calc( 33.33333333% - 20px );
+	}
+	.col-md-6{
+		width: calc( 50% - 20px );
+	}
+}
+/*屏幕宽度小于 768px 的场景*/
+@media (max-width:768px) {
+	.col-sm-2{
+		width: calc( 16.66666667% - 20px );
+	}
+	.col-sm-3{
+		width: calc( 25% - 20px );
+	}
+	.col-sm-6{
+		width: calc( 50% - 20px );
+	}
+	.col-sm-8{
+		width: calc( 66.66666667% - 20px );
+	}
+	.col-sm-12{
+		width: calc( 100% - 20px );
+	}
+}
